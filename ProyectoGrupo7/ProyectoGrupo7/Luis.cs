@@ -15,11 +15,19 @@ namespace ProyectoGrupo7
         public Luis()
         {
             InitializeComponent();
+            label1.Text = "Hola";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        
+        }         
+
     }
 }
