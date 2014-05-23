@@ -15,6 +15,13 @@ namespace ProyectoGrupo7
         public Gustavo()
         {
             InitializeComponent();
+            label1.Text= "G";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
