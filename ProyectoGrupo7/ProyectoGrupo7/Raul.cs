@@ -16,5 +16,21 @@ namespace ProyectoGrupo7
         {
             InitializeComponent();
         }
+        // ganador de la champions
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton2.Checked){
+               
+                MessageBox.Show("Real Madrid");
+            }
+        }
+
+        // ganador de la liga
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
