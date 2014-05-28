@@ -121,4 +121,7 @@
   <data name="fondo_pantalla_android" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo_pantalla_android.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cetys logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cetys logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
