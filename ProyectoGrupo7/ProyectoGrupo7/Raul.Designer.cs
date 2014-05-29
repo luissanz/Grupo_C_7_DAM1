@@ -45,6 +45,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reproductorDeMusicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -121,6 +122,8 @@
             // 
             // formatosToolStripMenuItem
             // 
+            this.formatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reproductorDeMusicaToolStripMenuItem});
             this.formatosToolStripMenuItem.Name = "formatosToolStripMenuItem";
             this.formatosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.formatosToolStripMenuItem.Text = "Formatos";
@@ -158,6 +161,10 @@
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Color = System.Drawing.SystemColors.ControlText;
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -172,6 +179,13 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // reproductorDeMusicaToolStripMenuItem
+            // 
+            this.reproductorDeMusicaToolStripMenuItem.Name = "reproductorDeMusicaToolStripMenuItem";
+            this.reproductorDeMusicaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.reproductorDeMusicaToolStripMenuItem.Text = "Reproductor de musica";
+            this.reproductorDeMusicaToolStripMenuItem.Click += new System.EventHandler(this.reproductorDeMusicaToolStripMenuItem_Click);
             // 
             // Raul
             // 
@@ -216,6 +230,7 @@
         private System.Windows.Forms.ToolStripMenuItem ganadorDeLaLigaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ganadorDeLaChampionsToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem reproductorDeMusicaToolStripMenuItem;
 
     }
 }

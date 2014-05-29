@@ -76,5 +76,10 @@ namespace ProyectoGrupo7
         {
 
         }
+
+        private void reproductorDeMusicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new reproductor().ShowDialog();
+        }
     }
 }
