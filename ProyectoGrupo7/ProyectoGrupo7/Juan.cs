@@ -143,7 +143,10 @@ namespace ProyectoGrupo7
 
         private void botonResta_Click(object sender, EventArgs e)
         {
-           
+            simbolo = "-";
+            operando2 = int.Parse(labelGrande.Text);
+            labelPequeño.Text = operando2 + " " + simbolo;
+            labelGrande.Text = "0";
         }
 
         private void botonIgual_Click(object sender, EventArgs e)
@@ -157,6 +160,55 @@ namespace ProyectoGrupo7
                 labelPequeño.Text = labelPequeño.Text + " " + operando1;
                 igual = true;
             }
+            else if (simbolo == "-")
+            {
+                operando1 = int.Parse(labelGrande.Text);
+                resultado = operando2 - operando1;
+                labelGrande.Text = Convert.ToString(resultado);
+                labelPequeño.Text = labelPequeño.Text + " " + operando1;
+                igual = true;
+            }
+            else if (simbolo == "*")
+            {
+                operando1 = int.Parse(labelGrande.Text);
+                resultado = operando2 * operando1;
+                labelGrande.Text = Convert.ToString(resultado);
+                labelPequeño.Text = labelPequeño.Text + " " + operando1;
+                igual = true;
+            }
+            else if (simbolo == "/")
+            {
+                operando1 = int.Parse(labelGrande.Text);
+                resultado = operando2 / operando1;
+                labelGrande.Text = Convert.ToString(resultado);
+                labelPequeño.Text = labelPequeño.Text + " " + operando1;
+                igual = true;
+            }
+        }
+
+        private void botonMultiplicacion_Click(object sender, EventArgs e)
+        {
+            simbolo = "*";
+            operando2 = int.Parse(labelGrande.Text);
+            labelPequeño.Text = operando2 + " " + simbolo;
+            labelGrande.Text = "0";
+        }
+
+        private void botonDivision_Click(object sender, EventArgs e)
+        {
+            simbolo = "/";
+            operando2 = int.Parse(labelGrande.Text);
+            labelPequeño.Text = operando2 + " " + simbolo;
+            labelGrande.Text = "0";
+        }
+
+        private void botonBorrar_Click(object sender, EventArgs e)
+        {
+            int operando1 = 0;
+            int operando2 = 0;
+            int resultado = 0;
+            labelPequeño.Text = "";
+            labelGrande.Text = "0";
         }
         
     }

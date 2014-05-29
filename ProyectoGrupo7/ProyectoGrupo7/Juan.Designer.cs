@@ -62,10 +62,12 @@
             // 
             // labelPequeño
             // 
+            this.labelPequeño.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPequeño.Location = new System.Drawing.Point(129, 9);
             this.labelPequeño.Name = "labelPequeño";
             this.labelPequeño.Size = new System.Drawing.Size(247, 32);
             this.labelPequeño.TabIndex = 1;
+            this.labelPequeño.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // button2
             // 
@@ -219,6 +221,7 @@
             this.botonMultiplicacion.TabIndex = 17;
             this.botonMultiplicacion.Text = "*";
             this.botonMultiplicacion.UseVisualStyleBackColor = true;
+            this.botonMultiplicacion.Click += new System.EventHandler(this.botonMultiplicacion_Click);
             // 
             // botonDivision
             // 
@@ -229,6 +232,7 @@
             this.botonDivision.TabIndex = 18;
             this.botonDivision.Text = "/";
             this.botonDivision.UseVisualStyleBackColor = true;
+            this.botonDivision.Click += new System.EventHandler(this.botonDivision_Click);
             // 
             // botonBorrar
             // 
@@ -238,6 +242,7 @@
             this.botonBorrar.TabIndex = 19;
             this.botonBorrar.Text = "Borrar";
             this.botonBorrar.UseVisualStyleBackColor = true;
+            this.botonBorrar.Click += new System.EventHandler(this.botonBorrar_Click);
             // 
             // Juan
             // 
