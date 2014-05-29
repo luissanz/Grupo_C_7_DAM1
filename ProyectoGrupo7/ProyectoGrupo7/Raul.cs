@@ -92,9 +92,9 @@ namespace ProyectoGrupo7
             var colores = colorDialog1.ShowDialog();
             if (colores == DialogResult.OK)
             
-            {
-
-                richTextBox1.ForeColor = colorDialog1.Color;
+            { 
+            
+            richTextBox1.ForeColor =colorDialog1.Color;
             
             }
         }
