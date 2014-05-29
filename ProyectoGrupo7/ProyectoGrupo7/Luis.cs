@@ -15,7 +15,7 @@ namespace ProyectoGrupo7
         public Luis()
         {
             InitializeComponent();
-            label1.Text = "Hola";
+            label1.Text = "Holaa";
         }
 
         private void button1_Click(object sender, EventArgs e)
