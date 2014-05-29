@@ -19,7 +19,7 @@ namespace ProyectoGrupo7
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            button1.Visible = false;
         }
             
     }
