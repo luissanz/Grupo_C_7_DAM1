@@ -111,12 +111,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Imagenes Alejandro\fondoAmarilloNaranja.jpg" />
-    <Content Include="Imagenes Alejandro\fondoAzul.jpg" />
+    <Content Include="Imagenes Alejandro\acertasteTodo.png" />
+    <Content Include="Imagenes Alejandro\Ahorcadoo.jpg" />
+    <Content Include="Imagenes Alejandro\ahorcado_0.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_1.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_2.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_3.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_4.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_5.png" />
+    <Content Include="Imagenes Alejandro\ahorcado_fin.png" />
     <Content Include="Imagenes Alejandro\fondoAzulRugoso.jpg" />
-    <Content Include="Imagenes Alejandro\fondoNaranja.jpg" />
-    <Content Include="Imagenes Alejandro\fondoRojo.jpg" />
-    <Content Include="Imagenes Alejandro\fondoRojo1.jpg" />
     <Content Include="Imagenes Alejandro\minijuegos1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
