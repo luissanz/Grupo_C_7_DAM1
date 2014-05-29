@@ -11,8 +11,8 @@ namespace Snake
 {
     public partial class Luis : Form
     {
-        private List<Circle> Snake = new List<Circle>();
-        private Circle food = new Circle();
+        private List<Rectangle> Snake = new List<Rectangle>();
+        private Rectangle food = new Rectangle();
 
         public Luis()
         {
@@ -39,7 +39,7 @@ namespace Snake
 
             //Create new player object
             Snake.Clear();
-            Circle head = new Circle();
+            Rectangle head = new Rectangle();
             head.X = 10;
             head.Y = 5;
             Snake.Add(head);
@@ -57,7 +57,7 @@ namespace Snake
             int maxYPos = pbCanvas.Size.Height / Settings.Height;
 
             Random random = new Random();
-            food = new Circle();
+            food = new Rectangle();
             food.X = random.Next(0, maxXPos);
             food.Y = random.Next(0, maxYPos);
         }
@@ -248,13 +248,13 @@ namespace Snake
 
         //private void Eat()
         //{
-        //    //Add circle to body
-        //    Circle circle = new Circle
+        //    //Add Rectangle to body
+        //    Rectangle Rectangle = new Rectangle
         //    {
         //        X = Snake[Snake.Count - 1].X,
         //        Y = Snake[Snake.Count - 1].Y
         //    };
-        //    Snake.Add(circle);
+        //    Snake.Add(Rectangle);
 
         //    //Update Score
         //    Settings.Score += Settings.Points;
