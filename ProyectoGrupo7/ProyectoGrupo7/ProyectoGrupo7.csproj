@@ -82,9 +82,17 @@
     <Compile Include="Raul.Designer.cs">
       <DependentUpon>Raul.cs</DependentUpon>
     </Compile>
+    <Compile Include="reproductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reproductor.Designer.cs">
+      <DependentUpon>reproductor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Juan.resx">
+      <DependentUpon>Juan.cs</DependentUpon>
     <EmbeddedResource Include="Luis.resx">
       <DependentUpon>Luis.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,7 +104,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Raul.resx">
+      <DependentUpon>Raul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reproductor.resx">
+      <DependentUpon>reproductor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +124,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_pantalla_android.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cetys logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
