@@ -21,6 +21,7 @@ namespace ProyectoGrupo7
         {
             InitializeComponent();
 
+            //En este for sustituimos los "_ " por cada letra de la palabraOculta
             for (int i = 0; i < palabraOculta.Length; i++)
             {
                 //para que sustituya cada letra de palabraOculta por "_ ";
@@ -32,25 +33,30 @@ namespace ProyectoGrupo7
 
         private void actualizaFallos(int _fallos)
         {
+
+            //Aqui se cargan las imagenes en funcion del numero de fallos que se lleven
             switch (_fallos)
             {
-                    
+
+                //He cogido el codigo de internet para cargar la imagen
+                //pero me da error a la hora de encontrar el archivo
+
                 case 0: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_0.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_0.png; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_0.png; break;
                 case 1: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_1.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_1; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_1; break;
                 case 2: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_2.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_2; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_2; break;
                 case 3: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_3.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_3; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_3; break;
                 case 4: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_4.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_4; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_4; break;
                 case 5: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_5.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_5; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_5; break;
                 case 6: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_6.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_fin; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_fin; break;
                 case 100: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_fin.png"); break;
-                // C++ -->pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.acertasteTodo; break;
+                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.acertasteTodo; break;
             }
         }
 
@@ -63,16 +69,18 @@ namespace ProyectoGrupo7
             button1.Visible = false;
             String letra = botonPulsado.Text;
 
-            //si la palabra oculta no contiene el boton pulsado se suma 1 fallo al contador
+            //si la palabraOculta no contiene el boton pulsado se suma 1 fallo al contador
             if (!palabraOculta.Contains(letra))
             {
                 contadorFallos++;
             }
             else
             {
+                //si la palabraOculta contiene la letra, se sutituye dicha letra por el "_ " correspondiente
                 for (int i = 0; i < palabraOculta.Length; i++)
                 {
-                    if (palabraOculta[i].Equals(letra[0])) //poner Text[0] el [0] para coger cada char y no todo el string
+                    if (palabraOculta[i].Equals(letra[0]))
+                    //poner Text[0] el [0] para coger cada char y no todo el string
                     {
                         palabraConGuiones = palabraConGuiones.Substring(0, 2 * i) + letra[0] + " " + palabraConGuiones.Substring(2 * i + 2);
                     }
@@ -80,6 +88,9 @@ namespace ProyectoGrupo7
                 //actualizo el display (label)
                 label1.Text = palabraConGuiones;
             }
+
+            //en caso de que palabraConGuines no contenta mas "_" quiere decir que todas las letras
+            //de la palabra han sido sutituidas y por lo tanto adivinado dicha palabra
             if (!palabraConGuiones.Contains("_"))
             {
                 contadorFallos = 100;
