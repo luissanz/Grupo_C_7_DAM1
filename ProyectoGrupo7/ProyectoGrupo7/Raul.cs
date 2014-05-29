@@ -81,5 +81,10 @@ namespace ProyectoGrupo7
         {
             new reproductor().ShowDialog();
         }
+
+        private void formatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

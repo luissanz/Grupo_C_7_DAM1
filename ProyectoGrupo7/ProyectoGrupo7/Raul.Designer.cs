@@ -36,6 +36,7 @@
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reproductorDeMusicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regalitoDeLaCasaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ganadorDeLaLigaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ganadorDeLaChampionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,7 +46,6 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.reproductorDeMusicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -125,8 +125,16 @@
             this.formatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reproductorDeMusicaToolStripMenuItem});
             this.formatosToolStripMenuItem.Name = "formatosToolStripMenuItem";
-            this.formatosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.formatosToolStripMenuItem.Text = "Formatos";
+            this.formatosToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.formatosToolStripMenuItem.Text = "Extras";
+            this.formatosToolStripMenuItem.Click += new System.EventHandler(this.formatosToolStripMenuItem_Click);
+            // 
+            // reproductorDeMusicaToolStripMenuItem
+            // 
+            this.reproductorDeMusicaToolStripMenuItem.Name = "reproductorDeMusicaToolStripMenuItem";
+            this.reproductorDeMusicaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.reproductorDeMusicaToolStripMenuItem.Text = "Reproductor de musica";
+            this.reproductorDeMusicaToolStripMenuItem.Click += new System.EventHandler(this.reproductorDeMusicaToolStripMenuItem_Click);
             // 
             // regalitoDeLaCasaToolStripMenuItem
             // 
@@ -179,13 +187,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // reproductorDeMusicaToolStripMenuItem
-            // 
-            this.reproductorDeMusicaToolStripMenuItem.Name = "reproductorDeMusicaToolStripMenuItem";
-            this.reproductorDeMusicaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.reproductorDeMusicaToolStripMenuItem.Text = "Reproductor de musica";
-            this.reproductorDeMusicaToolStripMenuItem.Click += new System.EventHandler(this.reproductorDeMusicaToolStripMenuItem_Click);
             // 
             // Raul
             // 

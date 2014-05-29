@@ -16,5 +16,16 @@ namespace ProyectoGrupo7
         {
             InitializeComponent();
         }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            axWindowsMediaPlayer1.URL = openFileDialog1.FileName;
+        }
+
+        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
