@@ -116,6 +116,7 @@
     <Content Include="Imagenes Alejandro\fondoAzulRugoso.jpg" />
     <Content Include="Imagenes Alejandro\fondoNaranja.jpg" />
     <Content Include="Imagenes Alejandro\fondoRojo.jpg" />
+    <Content Include="Imagenes Alejandro\fondoRojo1.jpg" />
     <Content Include="Imagenes Alejandro\minijuegos1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
