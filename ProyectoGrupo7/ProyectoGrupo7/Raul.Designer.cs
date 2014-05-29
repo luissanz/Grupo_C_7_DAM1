@@ -46,6 +46,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.coloresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -123,7 +124,8 @@
             // formatosToolStripMenuItem
             // 
             this.formatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reproductorDeMusicaToolStripMenuItem});
+            this.reproductorDeMusicaToolStripMenuItem,
+            this.coloresToolStripMenuItem});
             this.formatosToolStripMenuItem.Name = "formatosToolStripMenuItem";
             this.formatosToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.formatosToolStripMenuItem.Text = "Extras";
@@ -188,6 +190,13 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // coloresToolStripMenuItem
+            // 
+            this.coloresToolStripMenuItem.Name = "coloresToolStripMenuItem";
+            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.coloresToolStripMenuItem.Text = "Colores";
+            this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
+            // 
             // Raul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +241,7 @@
         private System.Windows.Forms.ToolStripMenuItem ganadorDeLaChampionsToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem reproductorDeMusicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coloresToolStripMenuItem;
 
     }
 }

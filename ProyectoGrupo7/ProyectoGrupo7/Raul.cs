@@ -86,5 +86,17 @@ namespace ProyectoGrupo7
         {
 
         }
+
+        private void coloresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var colores = colorDialog1.ShowDialog();
+            if (colores == DialogResult.OK)
+            
+            {
+
+                richTextBox1.ForeColor = colorDialog1.Color;
+            
+            }
+        }
     }
 }
