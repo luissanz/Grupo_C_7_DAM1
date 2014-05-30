@@ -41,22 +41,26 @@ namespace ProyectoGrupo7
                 //He cogido el codigo de internet para cargar la imagen
                 //pero me da error a la hora de encontrar el archivo
 
-                case 0: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_0.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_0.png; break;
-                case 1: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_1.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_1; break;
-                case 2: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_2.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_2; break;
-                case 3: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_3.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_3; break;
-                case 4: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_4.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_4; break;
-                case 5: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_5.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_5; break;
-                case 6: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_6.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_fin; break;
-                case 100: pictureBox2.Image = new System.Drawing.Bitmap(@"\Imagenes Alejandro\ahorcado_fin.png"); break;
-                //pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.acertasteTodo; break;
+                case 0: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_0; break;
+                case 1: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_1; break;
+                case 2: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_2; break;
+                case 3: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_3; break;
+                case 4: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_4; break;
+                case 5: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_5; break;
+                case 6: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.ahorcado_fin; break;
+                case 100: pictureBox2.Image = global::ProyectoGrupo7.Properties.Resources.acertasteTodo; break;
+            }
+            if (contadorFallos >= 6)
+            {
+                button1.Enabled = false; button9.Enabled = false; button17.Enabled = false;
+                button2.Enabled = false; button10.Enabled = false; button18.Enabled = false;
+                button3.Enabled = false; button11.Enabled = false; button19.Enabled = false;
+                button4.Enabled = false; button12.Enabled = false; button20.Enabled = false;
+                button5.Enabled = false; button13.Enabled = false; button21.Enabled = false;
+                button6.Enabled = false; button14.Enabled = false; button22.Enabled = false;
+                button7.Enabled = false; button15.Enabled = false; button23.Enabled = false;
+                button8.Enabled = false; button16.Enabled = false; button24.Enabled = false;
+                button25.Enabled = false; button26.Enabled = false; button27.Enabled = false;
             }
         }
 
